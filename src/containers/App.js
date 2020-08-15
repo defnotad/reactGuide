@@ -3,6 +3,8 @@ import classes from './App.css';
 
 import Persons from "../components/Persons/Persons";
 import Cockpit from "../components/Cockpit/Cockpit";
+import withClass from "../hoc/withClass"
+import Aux from "../hoc/Aux";
 
 class App extends Component {
   constructor(props) {
@@ -88,4 +90,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withClass(App, classes.app);
